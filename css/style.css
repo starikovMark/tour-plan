@@ -352,19 +352,43 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
-.header-top {
+.navbar-top {
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+.navbar-menu {
+  max-width: 1110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 0;
+  background-color: #0A223D;
+  list-style-type: none;
+}
+.navbar-menu__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar-menu__link:hover {
+  color: #EC1F46;
 }
 
 .search {

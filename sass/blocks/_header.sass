@@ -1,6 +1,8 @@
-.header
+.navbar
     background-color: #fff
+
     &-top
+        margin: auto
         display: flex
         align-items: center
         justify-content: space-between
@@ -9,13 +11,32 @@
     &__search
         margin-right: auto
         margin-left: 108px
+    &-menu
+        max-width: 1110px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 0
+        padding-top: 31px
+        padding-bottom: 31px
+        padding-left: 0
+        background-color: #0A223D
+        list-style-type: none
+        &__link
+            text-decoration: none
+            font-weight: 700
+            font-size: 14px
+            line-height: 18px
+            text-transform: uppercase
+            color: #fff
+            &:hover
+                color: $primary
 .search
     display: flex
     position: relative
     overflow: hidden
     border-radius: 6px
     height: 40px
-
     &__input
         width: 350px
         height: 100%
