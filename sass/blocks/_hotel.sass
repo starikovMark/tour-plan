@@ -33,6 +33,60 @@
                 font-weight: 700
                 font-size: 14px
                 line-height: 18px
+    &-grid
+        display: flex
+    &-price
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        font-family: 'Nunito'
+        max-width: 350px
+        max-height: 210px
+        padding: 29px 26px
+        border-radius: 8px
+        background-color: $dark
+        color: $light
+        &__info
+            display: flex
+            flex-direction: column
+            flex-basis: 70%
+        &__text
+            font-size: 10px
+            line-height: 14px
+        &__cost
+            font-weight: 800
+            font-size: 24px
+            line-height: 33px
+        &__number
+            display: flex
+            flex-direction: column
+        &__guests
+            font-size: 12px
+            line-height: 16px
+            margin-bottom: 8px
+        &__room
+            font-size: 12px
+            line-height: 16px
+        &__phone
+            display: flex
+            font-weight: 600
+            font-size: 18px
+            line-height: 25px
+        &__booking
+            margin-right: 100px
+            margin-bottom: 17px
+        &__button
+            padding: 13px 81px
+            width: 295px
+            height: 45px
+            font-weight: 600
+            font-size: 14px
+            line-height: 19px
+            color: $light
+            background-color: $primary
+            border: none
+            border-radius: 4px
+            cursor: pointer
 .stars
     display: flex
     flex-basis: 100%
@@ -69,6 +123,7 @@
         z-index: 10
 .slider
     max-width: 728px
+    margin-right: 30px
     &-button
         position: absolute
         width: 30px
