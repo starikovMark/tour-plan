@@ -22,7 +22,6 @@
             width: 340px
 @media (max-width: 768px)
     .container
-        max-width: 576px
         width: 92%
     .navbar
         &__search
@@ -50,6 +49,25 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .hotel
+        &-wrapper
+            justify-content: space-between
+        &-info
+            &__left
+                width: 100%
+            &__right
+                display: none
+            &__name
+                font-size: 24px
+                flex-basis: 100%
+                margin-top: 10px
+            &__offer
+                order: -1
+            &__description
+
+    .stars
+        flex-basis: auto
+        margin-bottom: 0
 @media (max-width: 576px)
     .logo
         width: 99px
