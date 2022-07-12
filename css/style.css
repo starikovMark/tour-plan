@@ -363,9 +363,11 @@ template {
   line-height: 18px;
   text-transform: uppercase;
   color: #fff;
+  transition: 0.15s;
 }
 .navbar-menu__link:hover {
   color: #EC1F46;
+  font-size: 15px;
 }
 
 .logo {
@@ -399,6 +401,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
