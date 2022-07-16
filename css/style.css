@@ -661,6 +661,72 @@ template {
   border-radius: 10px;
 }
 
+.newsletter {
+  position: relative;
+  background-image: url(../img/bg-newsletter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding-top: 98px;
+  padding-bottom: 87px;
+}
+.newsletter::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(10, 34, 61, 0.8);
+}
+.newsletter-wrapper {
+  position: relative;
+  align-items: center;
+  max-width: 731px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter__text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+.newsletter__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.newsletter__search {
+  height: 55px;
+  border-radius: 4px;
+}
+.newsletter__input {
+  background-color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+.newsletter-button {
+  padding: 20px 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -676,7 +742,7 @@ template {
   }
 }
 @media (max-width: 992px) {
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -724,6 +790,7 @@ template {
 }
 @media (max-width: 768px) {
   .container {
+    max-width: 576px;
     width: 92%;
   }
   .navbar__search {
@@ -791,6 +858,28 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 92%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 37px;
+  }
+  .newsletter__search {
+    width: 280px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -799,5 +888,9 @@ template {
   .slider {
     height: 250px;
     width: 100%;
+  }
+  .newsletter__search {
+    width: 95%;
+    max-width: 280px;
   }
 }
