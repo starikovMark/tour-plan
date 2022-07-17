@@ -1,0 +1,96 @@
+.reviews
+    padding: 40px 70px
+    &-title
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 70px
+    &-swiper
+        &__item
+            background-color: #fff
+            width: 731px
+            margin: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 45px
+            padding-bottom: 30px
+            border-radius: 8px
+            position: relative
+            &::before
+                content: ''
+                background: url(../img/quote-left.svg)
+                background-repeat: no-repeat
+                position: absolute
+                width: 70px
+                height: 48px
+                top: 13px
+                left: 64px
+            &::after
+                content: ''
+                background: url(../img/quote-right.svg)
+                background-repeat: no-repeat
+                position: absolute
+                width: 70px
+                height: 48px
+                top: 118px
+                right: 60px
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: -45px
+            margin-bottom: 33px
+        &__avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+            margin-bottom: 9px
+        &__username
+            font-style: normal
+            font-weight: 700
+            font-size: 12px
+            line-height: 15px
+            color: $primary
+            margin-bottom: 10px
+        &__date
+            font-style: normal
+            font-weight: 400
+            font-size: 10px
+            line-height: 13px
+            color: #000
+            margin-bottom: 5px
+        &-stars
+            display: flex
+            align-items: center
+        &__text
+            max-width: 537px
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            line-height: 19px
+            text-align: justify
+            margin: 0 auto
+        &__button
+            position: absolute
+            width: 30px
+            height: 30px
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 99
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 10px
+            background-color: transparent
+            &--next
+                right: 0px
+                background-image: url(../img/arrow-next-secondary.svg)
+            &--prev
+                left: 0px
+                background-image: url(../img/arrow-prev-secondary.svg)
