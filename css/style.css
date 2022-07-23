@@ -727,7 +727,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 70px;
+  padding: 40px 0 70px 0;
 }
 .reviews-title {
   font-style: normal;
@@ -838,6 +838,78 @@ template {
   background-image: url(../img/arrow-prev-secondary.svg);
 }
 
+.activities {
+  padding: 60px 0px 98px 0px;
+}
+.activities__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 57px;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  padding: 24px 26px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+.card__image {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+.card__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+  color: #fff;
+  margin-top: auto;
+}
+.card__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border: none;
+  padding: 7px 22px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #EC1F46;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -850,6 +922,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 220px;
+    height: 220px;
   }
 }
 @media (max-width: 992px) {
@@ -909,6 +985,17 @@ template {
   }
   .reviews-swiper__text {
     max-width: 455px;
+  }
+  .activities {
+    padding: 60px 0px 70px 0px;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -1033,6 +1120,16 @@ template {
     right: 50%;
     margin-right: -65px;
     transform: translate(50%, 0);
+  }
+  .activities {
+    padding: 40px 0px 60px 0px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
