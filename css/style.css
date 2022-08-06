@@ -919,6 +919,21 @@ template {
   align-items: center;
   justify-content: space-between;
 }
+.packages-image {
+  position: relative;
+}
+.packages-image__label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 4px 9px;
+  color: #fff;
+  background-color: #EC1F46;
+  position: absolute;
+  top: 23px;
+  left: 0;
+}
 .packages-title {
   margin-bottom: 65px;
 }
