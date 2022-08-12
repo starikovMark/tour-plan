@@ -719,6 +719,9 @@
       <!-- /.container -->
     </section>
     <!-- /.activities -->
+
+    <!-- Подвал -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
@@ -788,22 +791,13 @@
             <h3 class="footer__title">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link">
-                <img
-                  src="/img//facebook.svg"
-                  alt="Icon: Facebook"
-                  class="footer__icon"
+                <img src="/img//facebook.svg" alt="Icon: Facebook"
               /></a>
               <a href="#" class="footer__link">
-                <img
-                  src="/img//youtube.svg"
-                  alt="Icon: YouTube"
-                  class="footer__icon"
+                <img src="/img//youtube.svg" alt="Icon: YouTube"
               /></a>
               <a href="#" class="footer__link">
-                <img
-                  src="/img//instagram.svg"
-                  alt="Icon: Instagram"
-                  class="footer__icon"
+                <img src="/img//instagram.svg" alt="Icon: Instagram"
               /></a>
             </div>
           </div>
@@ -827,51 +821,73 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title">Contact Details</h3>
+            <h3 class="footer__title footer__title--mb-2">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item">
-                <img src="/img//map-marker.svg" alt="Icon: Map" />
+              <li class="footer__item footer__item--contacts">
+                <div class="footer__icon-wrapper">
+                  <img
+                    src="/img//map-marker.svg"
+                    alt="Icon: Map"
+                    class="footer__icon"
+                  />
+                </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item">
-                <img src="/img//phone-call-footer.svg" alt="Icon: Phone Call" />
+              <li class="footer__item footer__item--contacts">
+                <div class="footer__icon-wrapper">
+                  <img
+                    src="/img//phone-call-footer.svg"
+                    alt="Icon: Phone Call"
+                    class="footer__icon"
+                  />
+                </div>
                 Tel (business hours) : 269 1500 <br />
                 Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
                 pm) <br />
                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
-              <li class="footer__item">
-                <img src="/img//email.svg" alt="Icon: Email" />
+              <li class="footer__item footer__item--contacts">
+                <div class="footer__icon-wrapper">
+                  <img
+                    src="/img//email.svg"
+                    alt="Icon: Email"
+                    class="footer__icon"
+                  />
+                </div>
                 cherly.lawson@example.com
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <form action="#" class="footer__contact-form">
-            <input
-              type="text"
-              class="input footer__input"
-              placeholder="Your Full Name*"
-            />
-            <input
-              type="text"
-              class="input footer__input"
-              placeholder="Phone Number*"
-            />
-            <textarea
-              class="footer__message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-            <button class="button footer__button" type="submit">Send</button>
-            <span class="footer__required-fields">* Required Fields</span>
-          </form>
-          <!-- /.footer__contact-form -->
+
+          <div class="footer__contact-form">
+            <h3 class="footer__title footer__title--mb-2">Send us a message</h3>
+            <form action="#" class="footer__form">
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Your Full Name*"
+              />
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Phone Number*"
+              />
+              <textarea
+                class="footer__message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button class="button footer__button" type="submit">Send</button>
+              <span class="footer__info">* Required Fields</span>
+            </form>
+            <!-- /.footer__contact-form -->
+          </div>
         </div>
         <!-- /.footer-wrapper -->
       </div>
