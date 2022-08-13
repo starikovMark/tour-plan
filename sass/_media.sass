@@ -81,6 +81,37 @@
             grid-template-columns: 340px 340px
             grid-gap: 20px
             grid-template-rows: 500px 500px 500px
+    .footer
+        padding-top: 73px
+        padding-bottom: 56px
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 40px
+        &__logo
+            width: 104px
+            grid-row: 1
+            grid-column: span 2
+        &__categories
+            grid-row: 2
+            grid-column: span 2
+        &__additional
+            grid-row: 2
+            grid-column: span 2
+        &__social
+            &-network
+                grid-column: span 4
+                grid-row: 1
+                align-self: center
+        &__legal
+            grid-row: 2
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-row: 3
+                grid-column: span 5
+            &-form
+                grid-row: 4
+                grid-column: span 5
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -212,7 +243,7 @@
                 font-size: 20px
             &__picture
                 display: none
-            &__primary
+            &--primary
                 grid-column: 1 / 2
                 flex-direction: column
             &__image
@@ -232,7 +263,9 @@
                     line-height: 10px
                     top: 26px
                     padding: 4px 9px
-
+    .footer
+        &__input
+            flex-basis: 100%
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -248,3 +281,33 @@
             grid-template-columns: 100%
             grid-gap: 20px
             grid-template-rows: repeat(5, 480px)
+    .footer
+        padding-top: 69px
+        padding-bottom: 30px
+        &-wrapper
+            grid-template-columns: 1fr
+            grid-row-gap: 30px
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        &__additional
+            grid-row: 4
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                flex-wrap: wrap
+                grid-column: 1
+        &__legal
+            grid-row: 3
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
