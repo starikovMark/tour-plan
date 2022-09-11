@@ -42,5 +42,23 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  $(".modal__form").validate({
+    messages: {
+      name: {
+        required: "Укажите ваше имя",
+        minlength: "Имя должно быть не короче 2 символов",
+      },
+      email: {
+        required: "Укажите свой email",
+        email: "Ваш email адрес должен быть в формате name@domain.com",
+      },
+      phone: {
+        required: "Пожалуйста, укажите ваш номер телефона",
+      },
+    },
+  });
+  $(".phone").mask("+7 (999) 999-99-99");
+  AOS.init();
   });
 

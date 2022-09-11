@@ -27,7 +27,7 @@ img {
   font-size: 12px;
   line-height: 15px;
   border: none;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .message {
@@ -40,6 +40,12 @@ img {
   line-height: 15px;
   border: none;
   resize: none;
+  margin-top: 15px;
+}
+
+.error {
+  color: #EC1F46;
+  border-bottom: 2 px solid #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
